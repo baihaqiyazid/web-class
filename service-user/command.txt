@@ -1,0 +1,14 @@
+ 2004  express --no-view service-user
+ 2005  cd service-user
+ 2006  npm install
+ 2007  npm install dotenv --save
+ 2008  code .
+ 2009  npm install sequelize sequelize-cli --save
+ 2010  npx sequelize init
+ 2011  npx sequelize migration:create --name=create-table-user
+ 2012  npx sequelize migration:create --name=create-table-refresh-token
+ 2013  npx sequelize db:migrate
+ 2014  sudo npm install mysql2 --save
+ 2015  npx sequelize db:migrate
+ 2016  npx sequelize db:migrate:undo:all
+ 2017  npx sequelize db:migrate
