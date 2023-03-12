@@ -1,5 +1,5 @@
 module.exports = (sequalize, DataTypes) => {
-    const User = sequalize.define('users', {
+    const User = sequalize.define('User', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
