@@ -12,3 +12,8 @@
  2015  npx sequelize db:migrate
  2016  npx sequelize db:migrate:undo:all
  2017  npx sequelize db:migrate
+ 2025  npx sequelize seed:create --name=user-seeders
+ 2026  npm install bcrypct
+ 2027  npm install bcrypt --save
+ 2028  npx sequelize db:seed:all
+ 2029  npx sequelize db:seed:undo:all
