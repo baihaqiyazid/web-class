@@ -4,8 +4,8 @@ const api = apiAdaptor(URL_SERVICE_USER)
 
 module.exports = async (req, res) => {
     try {
-        const register = await api.post('/users/register', req.body)
-        return res.status(200).json(register.data)
+        const user = await api.post('/users/register', req.body)
+        return res.status(200).json(user.data)
 
     } catch (error) {
         if (error.code == 'ECONNREFUSED') {
